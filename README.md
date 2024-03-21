@@ -1,4 +1,4 @@
-# VHDL_Weekly_Assignment
+# Verilog_Weekly_Assignment
 
 ## How to build
 
