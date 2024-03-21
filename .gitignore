@@ -1,0 +1,17 @@
+.vscode/*
+!.vscode/settings.json
+.tmp
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.bak
+*.wlf
+
+Assignment/
+build/
+src/work
+src/modelsim.ini
+src/transcript
+src/tags
