@@ -1,0 +1,53 @@
+\documentclass{vhdl-assignment}
+
+\title{Assignment 7}
+\date{April 18, 2024}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{problem}{Behavioral 4-to-1 Multiplexer}
+    \begin{itemize}
+        \item Design a 4-to-1 Multiplexer using Behavioral statements.
+        \item Write testbench and simulate your design.
+    \end{itemize}
+
+    \begin{lstlisting}[language=Verilog, numbers=none]
+module mux4_to_1 (out, i0, i1, i2, i3, s1, s0);
+// write your design here
+endmodule
+\end{lstlisting}
+    \note{You can re-use the testbench module that you created earlier for the Structural 4-to-1 Multiplexer in Assignment 3,
+    or the Data Flow 4-to-1 Multiplexer in Assignment 6.
+    The simulation result should be the same.}
+\end{problem}
+
+\begin{problem}{Behavioral 4-bit Counter}
+    \begin{itemize}
+        \item Design a 4-bit Counter using Behavioral statements.
+        \item The counter contains an asynchronous, active-high reset signal.
+        \item Write testbench and simulate your design.
+    \end{itemize}
+        \begin{lstlisting}[language=Verilog, numbers=none]
+module counter(out, clock, reset);
+// write your design here
+endmodule
+\end{lstlisting}
+\end{problem}
+
+\begin{problem}{Behavioral Flip-Flops}
+    \begin{itemize}
+        \item Design the following module :
+        \begin{enumerate}
+            \item A D flip-flop with an \emph{asynchronous}, active-low reset signal.
+            \item A D flip-flop with an \emph{synchronous}, active-low reset signal.
+            \item A SR flip-flop with an \emph{synchronous}, active-high reset signal.
+            \item A T flip-flop with an \emph{synchronous}, active-low reset signal.
+            \item A JK-flip-flop, with no reset signal.
+        \end{enumerate}
+        \item Write testbench and simulate your design.
+    \end{itemize}
+\end{problem}
+
+\end{document}
