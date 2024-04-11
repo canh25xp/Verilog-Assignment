@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - "**/*.tex"
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 jobs:
   build_latex:
@@ -22,3 +22,10 @@ jobs:
           name: build
           path: ./build/*.pdf
         if: always()
+      - name: Publish PDF to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          force_orphan: true
