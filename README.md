@@ -5,5 +5,5 @@
 Build using latexmk
 
 ```
-latexmk -pdf -auxdir=.tmp -outdir=build Assignment_1.tex
+latexmk -pdf Assignment_1.tex
 ```

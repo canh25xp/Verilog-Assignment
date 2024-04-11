@@ -1,6 +1,9 @@
 name: Build LaTeX documents
 on:
   push:
+    paths:
+      - "**/*.tex"
+  workflow_dispatch:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
